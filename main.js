@@ -37,7 +37,7 @@ function updateClocks(lines) {
 
 function countdown(then, container) {
   var now = new Date();
-  var days = then.getDate() - now.getDate();
+  var days = Math.round((then - now) / (1000*60*60*24));
   var hours = then.getHours() - now.getHours();
   var minutes = then.getMinutes() - now.getMinutes();
   var seconds = then.getSeconds() - now.getSeconds();

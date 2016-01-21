@@ -17,7 +17,8 @@ function loadDeadlines(url) {
     for(var i = 0; i < lines.length; i++) {
       var color = Math.floor((i/lines.length) * 255);
       var rgb = "rgb(" + (255-color) + ", " + color + ", 80)";
-      clocks.append("<tr style='color:" + rgb + "; text-shadow: 0 0 5px " + rgb + "'><td style='text-align: right;'>" + lines[i][0] + "</td><td>" + lines[i][2] + "</td><td id='clock_" + i + "' style='text-align: right; width: 200px;'>" + lines[i][1] + "</td></tr>");
+      clocks.append("<tr style='color:" + rgb + "; text-shadow: 0 0 5px " + rgb + "'><td style='text-align: right;'>" + lines[i][0] + "</td><td>" + lines[i][2] + "</td><td id='clock_" + i + "' style='text-align: right; width: 200px;'>" + 
+lines[i][1] + "</td></tr>");
     }
 
     updateClocks(lines)

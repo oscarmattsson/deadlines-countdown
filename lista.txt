@@ -1,12 +1,25 @@
-TEST;2015-12-03T16:13:35+01:00;TESTING
-IE1204;2016-01-15T14:00:00+01:00;Tenta Digital Design
-ID1018;2016-01-13T09:00:00+01:00;Tenta Programmering
-ID1018;2015-12-18T12:00:00+01:00;Extra Uppgift 3
-ID1018;2015-12-18T12:00:00+01:00;Extra Uppgift 4
-ID1018;2015-12-18T12:00:00+01:00;Obligatorisk Uppgift 5
-ID1018;2015-12-11T17:00:00+01:00;Extra Uppgift 1
-ID1018;2015-12-11T17:00:00+01:00;Extra Uppgift 2
-ID1018;2015-12-11T17:00:00+01:00;Obligatorisk Uppgift 4
-ID1018;2015-12-04T17:00:00+01:00;Obligatorisk Uppgift 3
-IE1204;2015-12-10T08:00:00+01:00;Laboration VHDL
+IS1200;2016-03-24T09:00:00+01:00;Tenta
+IS1200;2016-03-09T08:00:00+01:00;Projekt: Utställning
+IS1200;2016-03-04T23:55:00+01:00;Projekt: Inlämning Abstract
+IS1200;2016-02-05T23:55:00+01:00;Projekt: Utkast Abstract
+IS1200;2016-02-18T08:00:00+01:00;Laboration 4: Processor Design
+IS1200;2016-02-12T13:00:00+01:00;Laboration 3: I/O Programming
+IS1200;2016-02-02T13:00:00+01:00;Laboration 2: C Programming
+IS1200;2016-01-26T13:00:00+01:00;Laboration 1: Assembly
+IS1200;2016-02-25T10:00:00+01:00;Seminarie 4: Parallel Processors
+IS1200;2016-02-19T13:00:00+01:00;Seminarie 3: Memory Hierarchy
+IS1200;2016-02-11T08:00:00+01:00;Seminarie 2: Processor Design
+IS1200;2016-02-04T08:00:00+01:00;Seminarie 1: C & Assembly
+IK1203;2016-02-29T13:00:00+01:00;Laboration 3: Network Addressing and Routing
+IK1203;2016-02-15T13:00:00+01:00;Laboration 2: Network Services
+IK1203;2016-02-02T08:00:00+01:00;Laboration 1: HTTP, SMTP, POP3 and Wireshark
+IK1203;2016-03-15T21:00:00+01:00;Hemuppgift 5 stänger
+IK1203;2016-03-08T14:00:00+01:00;Hemuppgift 5 öppnar
+IK1203;2016-03-06T21:00:00+01:00;Hemuppgift 4 stänger
+IK1203;2016-02-26T15:00:00+01:00;Hemuppgift 4 öppnar
+IK1203;2016-02-21T21:00:00+01:00;Hemuppgift 3 stänger
+IK1203;2016-02-12T17:00:00+01:00;Hemuppgift 3 öppnar
+IK1203;2016-02-07T21:00:00+01:00;Hemuppgift 2 stänger
+IK1203;2016-01-29T16:00:00+01:00;Hemuppgift 2 öppnar
+IK1203;2016-01-26T21:00:00+01:00;Hemuppgift 1 (a+b)
 SKYNET;1985-02-08T21:00:00+02:00;Skynet

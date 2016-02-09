@@ -3,11 +3,41 @@ $(document).ready(function() {
 });
 
 function loadDeadlines(url) {
+
+  var weekday = new Array(7);
+  weekday[0]=  "Söndag";
+  weekday[1] = "Måndag";
+  weekday[2] = "Tisdag";
+  weekday[3] = "Onsdag";
+  weekday[4] = "Tordag";
+  weekday[5] = "Fredag";
+  weekday[6] = "Lördag";
+
+  var month = new Array(12);
+  month[0] = "Januari";
+  month[1] = "Februari";
+  month[2] = "Mars";
+  month[3] = "April";
+  month[4] = "Maj";
+  month[5] = "Juni";
+  month[6] = "Juli";
+  month[7] = "Augusti";
+  month[8] = "September";
+  month[9] = "Oktober";
+  month[10] = "November";
+  month[11] = "December";
+
+
+
   $.get(url, function(data) {
     var lines = data.substring(0, data.length - 1).split('\n');
     for(var i = 0; i < lines.length; i++) {
       lines[i] = lines[i].split(';');
       if(new Date(lines[i][1]) < new Date()) { lines.splice(i--, 1); }
+      lines[i][4] =
+               weekday[new Date(lines[i][1]).getDay()] +
+        ", " + new Date(lines[i][1]).getDate() +
+        " "  + month[new Date(lines[i][1]).getMonth()]
     }
     lines.sort(function(a, b) { return new Date(a[1]) - new Date(b[1])})
 
@@ -17,8 +47,8 @@ function loadDeadlines(url) {
     for(var i = 0; i < lines.length; i++) {
       var color = Math.floor((i/lines.length) * 255);
       var rgb = "rgb(" + (255-color) + ", " + color + ", 80)";
-      clocks.append("<tr style='color:" + rgb + "; text-shadow: 0 0 5px " + rgb + "'><td style='text-align: right;'>" + lines[i][0] + "</td><td>" + lines[i][2] + "</td><td id='clock_" + i + "' style='text-align: right; width: 200px;'>" + 
-lines[i][1] + "</td></tr>");
+      clocks.append("<tr style='color:" + rgb + "; text-shadow: 0 0 5px " + rgb + "'><td style='text-align: right;'>" + lines[i][0] + "</td><td>" + lines[i][2] + "</td><td id='clock_" + i + "' style='text-align: right; width: 200px;'>" +
+lines[i][1] + "</td><td>" + lines[i][4] + "</td></tr>");
     }
 
     updateClocks(lines)

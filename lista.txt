@@ -1,4 +1,4 @@
-IS1200;2016-03-24T09:00:00+01:00;Tenta
+IS1200;2016-03-24T09:00:00+01:00;Tenta: Datorteknik
 IS1200;2016-03-09T08:00:00+01:00;Projekt: Utställning
 IS1200;2016-03-04T23:55:00+01:00;Projekt: Inlämning Abstract
 IS1200;2016-02-05T23:55:00+01:00;Projekt: Utkast Abstract
@@ -10,6 +10,7 @@ IS1200;2016-02-25T10:00:00+01:00;Seminarie 4: Parallel Processors
 IS1200;2016-02-19T13:00:00+01:00;Seminarie 3: Memory Hierarchy
 IS1200;2016-02-11T08:00:00+01:00;Seminarie 2: Processor Design
 IS1200;2016-02-04T08:00:00+01:00;Seminarie 1: C & Assembly
+IK1203;2016-03-17T14:00:00+01:00;Tenta: Nätverk och kommunikation
 IK1203;2016-02-29T13:00:00+01:00;Laboration 3: Network Addressing and Routing
 IK1203;2016-02-15T13:00:00+01:00;Laboration 2: Network Services
 IK1203;2016-02-02T08:00:00+01:00;Laboration 1: HTTP, SMTP, POP3 and Wireshark

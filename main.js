@@ -33,7 +33,10 @@ function loadDeadlines(url) {
     var lines = data.substring(0, data.length - 1).split('\n');
     for(var i = 0; i < lines.length; i++) {
       lines[i] = lines[i].split(';');
-      if(new Date(lines[i][1]) < new Date()) { lines.splice(i--, 1); }
+      if(new Date(lines[i][1]) < new Date()) { 
+	lines.splice(i--, 1);
+	continue;
+      }
       lines[i][4] =
                weekday[new Date(lines[i][1]).getDay()] +
         ", " + new Date(lines[i][1]).getDate() +
